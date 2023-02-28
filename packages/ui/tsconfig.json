@@ -1,5 +1,11 @@
 {
-  "extends": "tsconfig/react-library.json",
-  "include": ["."],
-  "exclude": ["dist", "build", "node_modules"]
+	"extends": "tsconfig/astro.json",
+	"include": [
+		"**/*.ts",
+		"**/*.svelte",
+		"**/*.astro"
+	],
+	"exclude": [
+		"node_modules"
+	],
 }

@@ -1,5 +1,16 @@
 {
-  "extends": "tsconfig/nextjs.json",
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+	"extends": "tsconfig/astro.json",
+	"include": [
+		"**/*.ts",
+		"**/*.svelte",
+		"**/*.astro"
+	],
+	"exclude": [
+		"node_modules"
+	],
+	"compilerOptions": {
+		"types": [
+			"cypress"
+		]
+	}
 }
